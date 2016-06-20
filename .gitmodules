@@ -1,0 +1,3 @@
+[submodule "sentry-php"]
+	path = sentry-php
+	url = https://github.com/getsentry/sentry-php.git
