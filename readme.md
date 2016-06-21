@@ -11,4 +11,22 @@ git submodule update --init --recursive
 
 Add your Sentry DSN to the **site/config/config.php**:
 
-`c::set('sentry.dsn', 'https://<key>:<secret>@app.getsentry.com/<project>');`
+```php
+c::set('sentry.dsn', 'https://<key>:<secret>@app.getsentry.com/<project>');
+```
+
+## Options
+
+You can use the following [Options](http://getkirby.com/docs/advanced/options) - make use of kirbys [Multi-environment setup](http://getkirby.com/blog/multi-environment-setup).
+
+### sentry.dsn
+Type: `String`
+Default value: `false`
+
+Your Sentry DSN, e.g. `https://<key>:<secret>@app.getsentry.com/<project>`
+
+#### sentry.disabled
+Type: `boolean`
+Default value: `false`
+
+disable the sentry plugin
