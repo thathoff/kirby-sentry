@@ -1,5 +1,5 @@
 <?php
-if ($sentryDsn = c::get('sentry.dsn', false) && !c::get('sentry.disabled', false)) {
+if (($sentryDsn = c::get('sentry.dsn', false)) && !c::get('sentry.disabled', false)) {
     require_once __DIR__ . '/sentry-php/lib/Raven/Autoloader.php';
     Raven_Autoloader::register();
 
