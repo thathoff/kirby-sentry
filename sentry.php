@@ -1,16 +1,17 @@
 <?php
+
 if (($sentryDsn = c::get('sentry.dsn', false)) && !c::get('sentry.disabled', false)) {
-    require_once __DIR__ . '/sentry-php/lib/Raven/Autoloader.php';
+    require kirby()->roots()->index() . DS . vendor . DS . 'sentry' . DS . 'sentry' . DS . 'lib' . DS . 'Raven' . DS . 'Autoloader.php';
     Raven_Autoloader::register();
 
     $client = new Raven_Client($sentryDsn);
 
     if ($user = site()->user()) {
-        $client->user_context(array(
+        $client->user_context([
             'id' => $user->username(),
             'username' => $user->firstName() . ' ' . $user->lastName(),
             'email' => $user->email(),
-        ));
+        ]);
     }
 
     $error_handler = new Raven_ErrorHandler($client);

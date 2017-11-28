@@ -1,0 +1,16 @@
+{
+  "name": "blankogmbh/kirby-sentry",
+  "version": "2.0.0",
+  "type": "kirby-plugin",
+  "require": {
+    "composer/installers": "~1.0",
+    "getkirby/kirby": "^2.4",
+    "sentry/sentry": "^1.8"
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/blankogmbh/kirby-sentry"
+    }
+  ]
+}
