@@ -1,5 +1,5 @@
 <?php
-
+function kirby_sentry() {
     if (($sentryDsn = c::get('sentry.dsn', false)) && !c::get('sentry.disabled', false)) {
         require_once __DIR__ . '/sentry-php/lib/Raven/Autoloader.php';
         Raven_Autoloader::register();
@@ -19,10 +19,10 @@
         $error_handler->registerErrorHandler();
         $error_handler->registerShutdownFunction();
         
-
+        return $client;
     } else {
         if (!$sentryDsn) {
             trigger_error('Sentry DSN not defined', E_USER_NOTICE);
         }
     }
-
+}
