@@ -30,6 +30,16 @@ c::set('sentry.dsn_public', 'https://' . c::get('sentry.PUBLIC_KEY') . '@' . c::
 c::set('sentry.disabled', false);
 ```
 
+### PHP logging
+
+```php
+// Get Sentry Raven client
+$client = kirby_sentry();
+
+// Start error reporting
+$client->captureMessage('blah blah!');
+```
+
 ### Javascript logging
 
 Add this to your site/snippets/footer.php, [after any other libraries are included, but before your own scripts](https://docs.getsentry.com/hosted/clients/javascript/install/)
@@ -44,7 +54,7 @@ Add this to your site/snippets/footer.php, [after any other libraries are includ
 <?php endif ?>
 ```
 
-## Options
+### Options
 
 You can use the following [Options](http://getkirby.com/docs/advanced/options) - make use of kirbys [Multi-environment setup](http://getkirby.com/blog/multi-environment-setup).
 
@@ -54,33 +64,33 @@ Default value: `false`
 
 disable the sentry plugin
 
-### sentry.PUBLIC_KEY
+#### sentry.PUBLIC_KEY
 Type: `String`
 Default value: `<key>`
 
-### sentry.SECRET_KEY
+#### sentry.SECRET_KEY
 Type: `String`
 Default value: `<secret>`
 
-### sentry.HOST
+#### sentry.HOST
 Type: `String`
 Default value: `app.getsentry.com`
 
-### sentry.PATH
+#### sentry.PATH
 Type: `String`
 Default value: `/`
 
-### sentry.PROJECT_ID
+#### sentry.PROJECT_ID
 Type: `String`
 Default value: `<project>`
 
-### sentry.dsn
+#### sentry.dsn
 Type: `String`
 
 Do not change this value, it will be generated automatically.
 Your Sentry DSN, keep this secret.
 
-### sentry.dsn_public
+#### sentry.dsn_public
 Type: `String`
 
 Do not change this value, it will be generated automatically.
