@@ -4,7 +4,7 @@ This is a plugin for [Kirby](http://getkirby.com/) that logs erros to [Sentry](h
 
 ## Installation
 
-`composer require blankogmbh/kirby-git-commit-and-push-content`
+`composer require blankogmbh/kirby-sentry`
 
 Add your Sentry DSN to the **site/config/config.php**:
 
