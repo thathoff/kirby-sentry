@@ -1,6 +1,5 @@
 {
   "name": "blankogmbh/kirby-sentry",
-  "version": "2.0.2",
   "type": "kirby-plugin",
   "require": {
     "composer/installers": "~1.0",
