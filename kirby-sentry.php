@@ -1,7 +1,7 @@
 <?php
 
 if (($sentryDsn = c::get('sentry.dsn', false)) && !c::get('sentry.disabled', false)) {
-    require kirby()->roots()->index() . DS . vendor . DS . 'sentry' . DS . 'sentry' . DS . 'lib' . DS . 'Raven' . DS . 'Autoloader.php';
+    require kirby()->roots()->index() . DS . 'vendor' . DS . 'sentry' . DS . 'sentry' . DS . 'lib' . DS . 'Raven' . DS . 'Autoloader.php';
     Raven_Autoloader::register();
 
     $client = new Raven_Client($sentryDsn);
