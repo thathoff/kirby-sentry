@@ -1,6 +1,6 @@
 # Kirby - Sentry plugin
 
-This is a plugin for [Kirby](http://getkirby.com/) that logs erros to [Sentry](https://getsentry.com).
+This is a plugin for [Kirby](http://getkirby.com) that logs errors to [Sentry](https://getsentry.com).
 
 ## Installation
 
@@ -15,9 +15,9 @@ c::set('sentry.dsn_public', 'https://<key>@<host>/<project>');
 
 ### Javascript logging
 
-Add this to your site/snippets/footer.php, [after any other libraries are included, but before your own scripts](https://docs.getsentry.com/hosted/clients/javascript/install/)
+Add this to your **site/snippets/footer.php**, [after any other libraries are included, but before your own scripts](https://docs.getsentry.com/hosted/clients/javascript/install)
 
-```
+```php
  <?php if (
     ($sentryDsn_public = c::get('sentry.dsn_public'))
     && !c::get('sentry.disabled', false)
@@ -29,13 +29,13 @@ Add this to your site/snippets/footer.php, [after any other libraries are includ
 
 ## Options
 
-You can use the following [Options](http://getkirby.com/docs/advanced/options) - make use of kirbys [Multi-environment setup](http://getkirby.com/blog/multi-environment-setup).
+You can use the following [Options](http://getkirby.com/docs/advanced/options) - make use of Kirby's [multi-environment setup](http://getkirby.com/blog/multi-environment-setup).
 
-#### sentry.disabled
+### sentry.disabled
 Type: `boolean`
 Default value: `false`
 
-disable the sentry plugin
+Disable the sentry plugin
 
 ### sentry.dsn
 Type: `String`
