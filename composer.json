@@ -1,5 +1,5 @@
 {
-  "name": "blankogmbh/kirby-sentry",
+  "name": "thathoff/kirby-sentry",
   "type": "kirby-plugin",
   "require": {
     "composer/installers": "~1.0",
@@ -9,7 +9,7 @@
   "repositories": [
     {
       "type": "vcs",
-      "url": "https://github.com/blankogmbh/kirby-sentry"
+      "url": "https://github.com/thathoff/kirby-sentry"
     }
   ]
 }
