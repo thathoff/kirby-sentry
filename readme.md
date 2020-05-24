@@ -1,6 +1,8 @@
 # Kirby - Sentry plugin
 
-This is a plugin for [Kirby](http://getkirby.com) that logs errors to [Sentry](https://getsentry.com).
+This is a plugin for [Kirby](http://getkirby.com) 2 that logs errors to [Sentry](https://getsentry.com).
+
+Please note: Kirby 3 is not yet supported!
 
 ## Installation
 
