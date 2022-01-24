@@ -1,15 +1,26 @@
 {
   "name": "thathoff/kirby-sentry",
   "type": "kirby-plugin",
+  "description": "Sentry integration for Kirby 3",
+  "license": "MIT",
   "require": {
-    "composer/installers": "~1.0",
-    "getkirby/kirby": "^2.4",
-    "sentry/sentry": "^1.8"
+    "getkirby/composer-installer": "^1.1",
+    "getkirby/cms": "^3.6.1",
+    "sentry/sdk": "^3.1"
   },
+  "authors": [
+    {
+      "name": "Markus Denhoff",
+      "email": "markus@denhoff.com"
+    }
+  ],
   "repositories": [
     {
       "type": "vcs",
       "url": "https://github.com/thathoff/kirby-sentry"
     }
-  ]
+  ],
+  "extra": {
+    "installer-name": "sentry"
+  }
 }
