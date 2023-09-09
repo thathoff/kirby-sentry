@@ -5,7 +5,7 @@
   "license": "MIT",
   "require": {
     "getkirby/composer-installer": "^1.1",
-    "getkirby/cms": "^3.6.1",
+    "getkirby/cms": "^3.6.1|^4.0.0.beta.1",
     "sentry/sdk": "^3.1"
   },
   "authors": [
