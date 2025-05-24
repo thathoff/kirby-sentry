@@ -1,8 +1,10 @@
 # Kirby Sentry Plugin
 
-This is a plugin for [Kirby](http://getkirby.com) (> 3.6.1) that logs errors and exceptions to [Sentry](https://sentry.io/) and other Sentry compatible error trackers (eg. GitLab).
+This is a plugin for [Kirby](http://getkirby.com) (> 3.6.1) that logs errors and exceptions to
+[Sentry](https://sentry.io/) and other Sentry compatible error trackers (eg. GitLab).
 
-⚠️ **Please Note:** Kirby versions before 3.6.1 are not supported because the `system.exception` hook is only available since Kirby 3.6.1.
+⚠️ **Please Note:** Kirby versions before 3.6.1 are not supported because the `system.exception` hook is only available
+since Kirby 3.6.1.
 
 ## Installation
 
@@ -33,9 +35,11 @@ Default: `null`
 
 ### Environment
 
-You can configure an environment which is sent to sentry. This can be eg. `staging` or any other string that helps you to identify the environment the error happened in.
+You can configure an environment which is sent to Sentry. This can be eg. `staging` or any other string that helps you
+to identify the environment the error happened in.
 
-Tip: Use [Kirby multi environment setup](https://getkirby.com/docs/guide/configuration#multi-environment-setup) to change this option.
+Tip: Use [Kirby multi environment setup](https://getkirby.com/docs/guide/configuration#multi-environment-setup) to
+change this option.
 
 Default: `'production'`
 
@@ -45,7 +49,8 @@ Default: `'production'`
 
 ### Add User Context
 
-When a Kirby user is logged in, the plugin sends the user’s email address and the user’ name to Sentry to track down errors and exceptions to users.
+When a Kirby user is logged in, the plugin sends the user’s email address and the users name to Sentry to track down
+errors and exceptions to users.
 
 To disable, set this option to `false`.
 
