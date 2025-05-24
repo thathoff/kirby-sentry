@@ -25,6 +25,7 @@
     }
   ],
   "extra": {
-    "installer-name": "sentry"
+    "installer-name": "sentry",
+    "kirby-cms-path": false
   }
 }
