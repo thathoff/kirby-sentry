@@ -6,7 +6,7 @@
   "require": {
     "getkirby/composer-installer": "^1.1",
     "getkirby/cms": "^3.6.1|^4.0.0|^5.0.0",
-    "sentry/sdk": "^3.1|^4.0"
+    "sentry/sentry": "^3.1|^4.0"
   },
   "authors": [
     {
